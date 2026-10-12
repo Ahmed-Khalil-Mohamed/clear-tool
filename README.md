@@ -21,6 +21,8 @@ Hardware. Games. Storage. Updates. One organized workspace.
 
 Clear Tool is an independent, open-source Windows desktop application for understanding your PC and handling everyday maintenance. See what is installed, review available updates, organize your games and inspect reclaimable cache space from one bilingual interface.
 
+**[Join the launch discussion](https://github.com/Ahmed-Khalil-Mohamed/clear-tool/discussions/1)** — explore the release, share feedback and help shape what comes next.
+
 **You choose the action.** Scans show their results before cleanup or updates. Progress comes from completed work or reported download bytes; when an operation cannot report a percentage, the app says it is still working.
 
 ## Download & start
