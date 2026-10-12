@@ -1,5 +1,26 @@
 # Changelog
 
+## 2.3.0 — Device Atlas
+
+### Added
+
+- Offline device atlas: 42 manufacturer entries, 110 family matching rules and 25 bundled illustrations (14 new).
+- Search by brand/family, form-factor filters, manual artwork selection and automatic reset from the Overview page.
+- Twelve component categories, with actual Windows inventory for available CPU, GPU, memory, motherboard, storage, display, network, audio and battery data. Cases, cooling and power supplies are explicitly marked unavailable when the inventory cannot identify their models.
+- A complete [coverage inventory](docs/DEVICE-ATLAS.md), image-generation provenance and reference-brand lists.
+
+### Improved
+
+- Device detection uses enclosure type, SystemFamily and product version, including Lenovo machines with opaque model codes.
+- Distinct illustrations for additional gaming/business laptops, all-in-ones, detachables, rugged laptops and workstations.
+- Artwork selection preserves detected hardware identity; the exact ASUS FA607NUG photograph remains a separate verified view.
+- Bilingual, light/dark catalog with keyboard dismissal and responsive layouts.
+
+### Verification and scope
+
+37 automated tests passed. Windows 11 x64 packaged checks covered atlas filtering, all 25 bundled images, manual selection, component inventory, language/theme changes and automatic reset without renderer errors. Family coverage uses fixtures; these are not 110 physically tested models. No claim of universal model coverage or exact teardown imagery.
+
+
 ## 2.2.0 — First public release
 
 ### Added

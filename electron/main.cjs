@@ -3,7 +3,8 @@ const path=require('node:path');const fs=require('node:fs/promises');const {rand
 const sys=require('./system.cjs');const {readInventory}=require('./inventory.cjs');const fileTools=require('./files.cjs');
 const readIcons=require('./icons.cjs').createIconReader(app);
 const root=path.join(__dirname,'..');
-if(!app.isPackaged)app.setPath('userData',path.join(root,'work','app-data'));
+if(process.env.CLEAR_TEST==='1'&&process.env.CLEAR_TEST_DATA)app.setPath('userData',path.resolve(process.env.CLEAR_TEST_DATA));
+else if(!app.isPackaged)app.setPath('userData',path.join(root,'work','app-data'));
 else if(process.env.PORTABLE_EXECUTABLE_DIR)app.setPath('userData',path.join(process.env.PORTABLE_EXECUTABLE_DIR,'ClearTool-Data'));
 let win,inventory={apps:[]},cleanupSession=null,upgradeScan=null;const busy=new Set();const knownPaths=new Set();
 const links={

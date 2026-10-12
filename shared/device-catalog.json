@@ -1,0 +1,1291 @@
+{
+  "version": 1,
+  "brands": [
+    {
+      "id": "asus",
+      "label": "ASUS",
+      "aliases": "ASUS|ASUSTeK",
+      "source": "https://www.asus.com/laptops/for-home/all-series/"
+    },
+    {
+      "id": "lenovo",
+      "label": "Lenovo",
+      "aliases": "LENOVO",
+      "source": "https://psref.lenovo.com/"
+    },
+    {
+      "id": "dell",
+      "label": "Dell / Alienware",
+      "aliases": "Dell|Alienware",
+      "source": "https://www.dell.com/en-us/shop/scc/sc/laptops"
+    },
+    {
+      "id": "hp",
+      "label": "HP",
+      "aliases": "^HP$|Hewlett|HP Inc",
+      "source": "https://www.hp.com/us-en/shop/cat/laptops"
+    },
+    {
+      "id": "acer",
+      "label": "Acer",
+      "aliases": "Acer",
+      "source": "https://www.acer.com/us-en/laptops"
+    },
+    {
+      "id": "msi",
+      "label": "MSI",
+      "aliases": "Micro-Star|\\bMSI\\b",
+      "source": "https://www.msi.com/Laptops"
+    },
+    {
+      "id": "gigabyte",
+      "label": "Gigabyte / AORUS",
+      "aliases": "GIGABYTE|AORUS",
+      "source": "https://www.gigabyte.com/Laptop"
+    },
+    {
+      "id": "razer",
+      "label": "Razer",
+      "aliases": "Razer",
+      "source": "https://www.razer.com/gaming-laptops"
+    },
+    {
+      "id": "microsoft",
+      "label": "Microsoft Surface",
+      "aliases": "Microsoft",
+      "source": "https://www.microsoft.com/surface"
+    },
+    {
+      "id": "samsung",
+      "label": "Samsung",
+      "aliases": "Samsung",
+      "source": "https://www.samsung.com/us/computing/galaxy-books/"
+    },
+    {
+      "id": "lg",
+      "label": "LG",
+      "aliases": "^LG|LG Electronics",
+      "source": "https://www.lg.com/us/laptops"
+    },
+    {
+      "id": "huawei",
+      "label": "Huawei",
+      "aliases": "HUAWEI",
+      "source": "https://consumer.huawei.com/en/laptops/"
+    },
+    {
+      "id": "honor",
+      "label": "HONOR",
+      "aliases": "HONOR",
+      "source": "https://www.honor.com/global/laptops/"
+    },
+    {
+      "id": "xiaomi",
+      "label": "Xiaomi / Redmi",
+      "aliases": "Xiaomi|Redmi",
+      "source": "https://www.mi.com/"
+    },
+    {
+      "id": "framework",
+      "label": "Framework",
+      "aliases": "Framework",
+      "source": "https://frame.work/"
+    },
+    {
+      "id": "apple",
+      "label": "Apple (Intel / Boot Camp)",
+      "aliases": "Apple",
+      "source": "https://support.apple.com/boot-camp"
+    },
+    {
+      "id": "dynabook",
+      "label": "Dynabook / Toshiba",
+      "aliases": "Dynabook|TOSHIBA",
+      "source": "https://us.dynabook.com/"
+    },
+    {
+      "id": "fujitsu",
+      "label": "Fujitsu",
+      "aliases": "FUJITSU",
+      "source": "https://www.fujitsu.com/global/products/computing/pc/"
+    },
+    {
+      "id": "panasonic",
+      "label": "Panasonic",
+      "aliases": "Panasonic|Matsushita",
+      "source": "https://na.panasonic.com/toughbook"
+    },
+    {
+      "id": "vaio",
+      "label": "VAIO",
+      "aliases": "VAIO|Sony",
+      "source": "https://us.vaio.com/"
+    },
+    {
+      "id": "medion",
+      "label": "Medion",
+      "aliases": "MEDION",
+      "source": "https://www.medion.com/"
+    },
+    {
+      "id": "clevo",
+      "label": "Clevo",
+      "aliases": "CLEVO",
+      "source": "https://www.clevo.com.tw/"
+    },
+    {
+      "id": "tongfang",
+      "label": "Tongfang",
+      "aliases": "TONGFANG",
+      "source": "https://www.tongfangpc.com/"
+    },
+    {
+      "id": "schenker",
+      "label": "Schenker / XMG",
+      "aliases": "SCHENKER|XMG",
+      "source": "https://www.xmg.gg/"
+    },
+    {
+      "id": "tuxedo",
+      "label": "TUXEDO",
+      "aliases": "TUXEDO",
+      "source": "https://www.tuxedocomputers.com/"
+    },
+    {
+      "id": "system76",
+      "label": "System76",
+      "aliases": "System76",
+      "source": "https://system76.com/"
+    },
+    {
+      "id": "corsair",
+      "label": "Corsair",
+      "aliases": "CORSAIR",
+      "source": "https://www.corsair.com/"
+    },
+    {
+      "id": "nzxt",
+      "label": "NZXT",
+      "aliases": "NZXT",
+      "source": "https://nzxt.com/"
+    },
+    {
+      "id": "origin",
+      "label": "ORIGIN PC",
+      "aliases": "ORIGIN",
+      "source": "https://www.originpc.com/"
+    },
+    {
+      "id": "cyberpower",
+      "label": "CyberPowerPC",
+      "aliases": "CyberPower",
+      "source": "https://www.cyberpowerpc.com/"
+    },
+    {
+      "id": "ibuypower",
+      "label": "iBUYPOWER",
+      "aliases": "iBUYPOWER",
+      "source": "https://www.ibuypower.com/"
+    },
+    {
+      "id": "zotac",
+      "label": "ZOTAC",
+      "aliases": "ZOTAC",
+      "source": "https://www.zotac.com/"
+    },
+    {
+      "id": "intel",
+      "label": "Intel",
+      "aliases": "Intel",
+      "source": "https://www.intel.com/content/www/us/en/products/details/nuc.html"
+    },
+    {
+      "id": "beelink",
+      "label": "Beelink",
+      "aliases": "Beelink|AZW",
+      "source": "https://www.bee-link.com/"
+    },
+    {
+      "id": "minisforum",
+      "label": "Minisforum",
+      "aliases": "MINISFORUM|Micro Computer",
+      "source": "https://www.minisforum.com/"
+    },
+    {
+      "id": "asrock",
+      "label": "ASRock",
+      "aliases": "ASRock",
+      "source": "https://www.asrock.com/"
+    },
+    {
+      "id": "shuttle",
+      "label": "Shuttle",
+      "aliases": "Shuttle",
+      "source": "https://www.shuttle.com/"
+    },
+    {
+      "id": "ecs",
+      "label": "ECS / Elitegroup",
+      "aliases": "ECS|Elitegroup",
+      "source": "https://www.ecs.com.tw/"
+    },
+    {
+      "id": "chuwi",
+      "label": "CHUWI",
+      "aliases": "CHUWI",
+      "source": "https://www.chuwi.com/"
+    },
+    {
+      "id": "teclast",
+      "label": "Teclast",
+      "aliases": "TECLAST",
+      "source": "https://en.teclast.com/"
+    },
+    {
+      "id": "gateway",
+      "label": "Gateway",
+      "aliases": "Gateway",
+      "source": "https://www.gatewayusa.com/"
+    },
+    {
+      "id": "packardbell",
+      "label": "Packard Bell",
+      "aliases": "Packard Bell",
+      "source": "https://www.packardbell.com/"
+    }
+  ],
+  "families": [
+    {
+      "id": "asus-tuf",
+      "brand": "asus",
+      "label": "TUF",
+      "pattern": "TUF|FA[56]0[0-9]|FX[567]0[0-9]",
+      "form": "laptop",
+      "art": "asus-tuf"
+    },
+    {
+      "id": "asus-rog",
+      "brand": "asus",
+      "label": "ROG Strix / Zephyrus / Flow",
+      "pattern": "ROG|Strix|Zephyrus",
+      "form": "laptop",
+      "art": "asus-rog"
+    },
+    {
+      "id": "asus-zenbook",
+      "brand": "asus",
+      "label": "Zenbook",
+      "pattern": "Zenbook|ZenBook",
+      "form": "laptop",
+      "art": "asus-zenbook"
+    },
+    {
+      "id": "asus-vivobook",
+      "brand": "asus",
+      "label": "Vivobook",
+      "pattern": "Vivobook|VivoBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "asus-expertbook",
+      "brand": "asus",
+      "label": "ExpertBook",
+      "pattern": "ExpertBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "asus-proart",
+      "brand": "asus",
+      "label": "ProArt / StudioBook",
+      "pattern": "ProArt|StudioBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "asus-nuc",
+      "brand": "asus",
+      "label": "NUC",
+      "pattern": "NUC",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "asus-expertcenter",
+      "brand": "asus",
+      "label": "ExpertCenter",
+      "pattern": "ExpertCenter",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "asus-aio",
+      "brand": "asus",
+      "label": "ASUS All-in-One",
+      "pattern": "All.in.One|Vivo AiO|Zen AiO",
+      "form": "aio",
+      "art": "all-in-one"
+    },
+    {
+      "id": "lenovo-legion",
+      "brand": "lenovo",
+      "label": "Legion",
+      "pattern": "Legion",
+      "form": "laptop",
+      "art": "lenovo-legion"
+    },
+    {
+      "id": "lenovo-loq",
+      "brand": "lenovo",
+      "label": "LOQ",
+      "pattern": "\\bLOQ\\b",
+      "form": "laptop",
+      "art": "lenovo-loq"
+    },
+    {
+      "id": "lenovo-thinkpad",
+      "brand": "lenovo",
+      "label": "ThinkPad",
+      "pattern": "ThinkPad",
+      "form": "laptop",
+      "art": "lenovo-thinkpad"
+    },
+    {
+      "id": "lenovo-thinkbook",
+      "brand": "lenovo",
+      "label": "ThinkBook",
+      "pattern": "ThinkBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "lenovo-yoga",
+      "brand": "lenovo",
+      "label": "Yoga",
+      "pattern": "Yoga",
+      "form": "laptop",
+      "art": "lenovo-yoga"
+    },
+    {
+      "id": "lenovo-ideapad",
+      "brand": "lenovo",
+      "label": "IdeaPad",
+      "pattern": "IdeaPad",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "lenovo-slim",
+      "brand": "lenovo",
+      "label": "Slim",
+      "pattern": "\\bSlim\\b",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "lenovo-tiny",
+      "brand": "lenovo",
+      "label": "ThinkCentre Tiny",
+      "pattern": "ThinkCentre.*Tiny|Tiny.*ThinkCentre",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "lenovo-thinkcentre",
+      "brand": "lenovo",
+      "label": "ThinkCentre",
+      "pattern": "ThinkCentre",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "lenovo-thinkstation",
+      "brand": "lenovo",
+      "label": "ThinkStation",
+      "pattern": "ThinkStation",
+      "form": "workstation",
+      "art": "workstation"
+    },
+    {
+      "id": "lenovo-ideacentre",
+      "brand": "lenovo",
+      "label": "IdeaCentre",
+      "pattern": "IdeaCentre",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "dell-alienware",
+      "brand": "dell",
+      "label": "Alienware",
+      "pattern": "Alienware",
+      "form": "laptop",
+      "art": "alienware-laptop"
+    },
+    {
+      "id": "dell-xps",
+      "brand": "dell",
+      "label": "XPS",
+      "pattern": "\\bXPS\\b",
+      "form": "laptop",
+      "art": "dell-xps"
+    },
+    {
+      "id": "dell-latitude",
+      "brand": "dell",
+      "label": "Latitude",
+      "pattern": "Latitude",
+      "form": "laptop",
+      "art": "dell-business"
+    },
+    {
+      "id": "dell-inspiron",
+      "brand": "dell",
+      "label": "Inspiron",
+      "pattern": "Inspiron",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "dell-precision",
+      "brand": "dell",
+      "label": "Precision / Pro Max",
+      "pattern": "Precision|Pro Max",
+      "form": "laptop",
+      "art": "dell-business"
+    },
+    {
+      "id": "dell-pro",
+      "brand": "dell",
+      "label": "Dell Pro",
+      "pattern": "Dell Pro",
+      "form": "laptop",
+      "art": "dell-business"
+    },
+    {
+      "id": "dell-g",
+      "brand": "dell",
+      "label": "G series",
+      "pattern": "\\bG[357](?:\\s|[0-9]|$)",
+      "form": "laptop",
+      "art": "gaming-laptop"
+    },
+    {
+      "id": "dell-optiplex-micro",
+      "brand": "dell",
+      "label": "OptiPlex Micro",
+      "pattern": "OptiPlex.*Micro",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "dell-optiplex",
+      "brand": "dell",
+      "label": "OptiPlex",
+      "pattern": "OptiPlex",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "dell-aurora",
+      "brand": "dell",
+      "label": "Alienware Aurora",
+      "pattern": "Aurora",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "hp-omen",
+      "brand": "hp",
+      "label": "OMEN",
+      "pattern": "OMEN",
+      "form": "laptop",
+      "art": "hp-omen"
+    },
+    {
+      "id": "hp-victus",
+      "brand": "hp",
+      "label": "Victus",
+      "pattern": "Victus",
+      "form": "laptop",
+      "art": "hp-omen"
+    },
+    {
+      "id": "hp-pavilion",
+      "brand": "hp",
+      "label": "Pavilion",
+      "pattern": "Pavilion",
+      "form": "laptop",
+      "art": "hp-laptop"
+    },
+    {
+      "id": "hp-envy",
+      "brand": "hp",
+      "label": "Envy",
+      "pattern": "Envy",
+      "form": "laptop",
+      "art": "hp-laptop"
+    },
+    {
+      "id": "hp-spectre",
+      "brand": "hp",
+      "label": "Spectre",
+      "pattern": "Spectre",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "hp-elitebook",
+      "brand": "hp",
+      "label": "EliteBook",
+      "pattern": "EliteBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "hp-probook",
+      "brand": "hp",
+      "label": "ProBook",
+      "pattern": "ProBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "hp-zbook",
+      "brand": "hp",
+      "label": "ZBook",
+      "pattern": "ZBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "hp-omnibook",
+      "brand": "hp",
+      "label": "OmniBook",
+      "pattern": "OmniBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "hp-mini",
+      "brand": "hp",
+      "label": "Elite Mini / Pro Mini",
+      "pattern": "(?:Elite|Pro).*Mini",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "hp-elitedesk",
+      "brand": "hp",
+      "label": "EliteDesk / ProDesk",
+      "pattern": "EliteDesk|ProDesk",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "hp-z",
+      "brand": "hp",
+      "label": "Z workstation",
+      "pattern": "\\bZ[248][0-9]{2}\\b|Z[248] Tower",
+      "form": "workstation",
+      "art": "workstation"
+    },
+    {
+      "id": "hp-aio",
+      "brand": "hp",
+      "label": "All-in-One",
+      "pattern": "All.in.One|\\bAiO\\b",
+      "form": "aio",
+      "art": "all-in-one"
+    },
+    {
+      "id": "acer-predator",
+      "brand": "acer",
+      "label": "Predator Helios / Triton",
+      "pattern": "Predator|Helios|Triton",
+      "form": "laptop",
+      "art": "acer-predator"
+    },
+    {
+      "id": "acer-nitro",
+      "brand": "acer",
+      "label": "Nitro",
+      "pattern": "Nitro",
+      "form": "laptop",
+      "art": "acer-predator"
+    },
+    {
+      "id": "acer-swift",
+      "brand": "acer",
+      "label": "Swift",
+      "pattern": "Swift",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "acer-aspire",
+      "brand": "acer",
+      "label": "Aspire",
+      "pattern": "Aspire",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "acer-travelmate",
+      "brand": "acer",
+      "label": "TravelMate",
+      "pattern": "TravelMate",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "acer-conceptd",
+      "brand": "acer",
+      "label": "ConceptD",
+      "pattern": "ConceptD",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "acer-veriton",
+      "brand": "acer",
+      "label": "Veriton",
+      "pattern": "Veriton",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "acer-revo",
+      "brand": "acer",
+      "label": "Revo",
+      "pattern": "Revo",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "msi-titan",
+      "brand": "msi",
+      "label": "Titan / Raider",
+      "pattern": "Titan|Raider|\\bGE[0-9]|\\bGT[0-9]",
+      "form": "laptop",
+      "art": "msi-gaming"
+    },
+    {
+      "id": "msi-stealth",
+      "brand": "msi",
+      "label": "Stealth / Vector",
+      "pattern": "Stealth|Vector",
+      "form": "laptop",
+      "art": "msi-gaming"
+    },
+    {
+      "id": "msi-katana",
+      "brand": "msi",
+      "label": "Katana / Sword / Cyborg / Thin",
+      "pattern": "Katana|Sword|Cyborg|Thin|Pulse|Crosshair|Bravo|Alpha",
+      "form": "laptop",
+      "art": "msi-gaming"
+    },
+    {
+      "id": "msi-prestige",
+      "brand": "msi",
+      "label": "Prestige / Summit / Modern",
+      "pattern": "Prestige|Summit|Modern",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "msi-creator",
+      "brand": "msi",
+      "label": "Creator",
+      "pattern": "Creator",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "msi-trident",
+      "brand": "msi",
+      "label": "Trident / Aegis / Infinite",
+      "pattern": "Trident|Aegis|Infinite",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "msi-cubi",
+      "brand": "msi",
+      "label": "Cubi",
+      "pattern": "Cubi",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "gigabyte-aorus",
+      "brand": "gigabyte",
+      "label": "AORUS",
+      "pattern": "AORUS",
+      "form": "laptop",
+      "art": "gaming-laptop"
+    },
+    {
+      "id": "gigabyte-aero",
+      "brand": "gigabyte",
+      "label": "AERO",
+      "pattern": "AERO",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "gigabyte-gaming",
+      "brand": "gigabyte",
+      "label": "G5 / G6 / G7",
+      "pattern": "\\bG[567]\\b",
+      "form": "laptop",
+      "art": "gaming-laptop"
+    },
+    {
+      "id": "gigabyte-brix",
+      "brand": "gigabyte",
+      "label": "BRIX",
+      "pattern": "BRIX",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "razer-blade",
+      "brand": "razer",
+      "label": "Blade",
+      "pattern": "Blade",
+      "form": "laptop",
+      "art": "razer-blade"
+    },
+    {
+      "id": "microsoft-laptop",
+      "brand": "microsoft",
+      "label": "Surface Laptop / Book",
+      "pattern": "Surface Laptop|Surface Book",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "microsoft-pro",
+      "brand": "microsoft",
+      "label": "Surface Pro / Go",
+      "pattern": "Surface Pro|Surface Go",
+      "form": "tablet",
+      "art": "tablet"
+    },
+    {
+      "id": "microsoft-studio",
+      "brand": "microsoft",
+      "label": "Surface Studio",
+      "pattern": "Surface Studio",
+      "form": "aio",
+      "art": "all-in-one"
+    },
+    {
+      "id": "samsung-galaxy",
+      "brand": "samsung",
+      "label": "Galaxy Book",
+      "pattern": "Galaxy Book|GalaxyBook",
+      "form": "laptop",
+      "art": "samsung-galaxybook"
+    },
+    {
+      "id": "samsung-notebook",
+      "brand": "samsung",
+      "label": "Notebook / ATIV",
+      "pattern": "Notebook|ATIV",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "lg-gram",
+      "brand": "lg",
+      "label": "gram",
+      "pattern": "gram",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "lg-ultra",
+      "brand": "lg",
+      "label": "Ultra PC",
+      "pattern": "Ultra PC",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "huawei-matebook",
+      "brand": "huawei",
+      "label": "MateBook",
+      "pattern": "MateBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "huawei-matestation",
+      "brand": "huawei",
+      "label": "MateStation",
+      "pattern": "MateStation",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "honor-magicbook",
+      "brand": "honor",
+      "label": "MagicBook",
+      "pattern": "MagicBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "xiaomi-book",
+      "brand": "xiaomi",
+      "label": "Mi / Redmi Book",
+      "pattern": "Mi.*Book|Redmi.*Book|Xiaomi.*Book|Notebook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "framework-laptop",
+      "brand": "framework",
+      "label": "Laptop 12 / 13 / 16",
+      "pattern": "Laptop",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "framework-desktop",
+      "brand": "framework",
+      "label": "Desktop",
+      "pattern": "Desktop",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "apple-macbook",
+      "brand": "apple",
+      "label": "MacBook",
+      "pattern": "MacBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "apple-imac",
+      "brand": "apple",
+      "label": "iMac",
+      "pattern": "iMac",
+      "form": "aio",
+      "art": "all-in-one"
+    },
+    {
+      "id": "apple-mini",
+      "brand": "apple",
+      "label": "Mac mini",
+      "pattern": "Macmini|Mac mini",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "apple-pro",
+      "brand": "apple",
+      "label": "Mac Pro",
+      "pattern": "MacPro|Mac Pro",
+      "form": "workstation",
+      "art": "workstation"
+    },
+    {
+      "id": "dynabook-portege",
+      "brand": "dynabook",
+      "label": "Portégé",
+      "pattern": "Port[eé]g[eé]",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "dynabook-tecra",
+      "brand": "dynabook",
+      "label": "Tecra",
+      "pattern": "Tecra",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "dynabook-satellite",
+      "brand": "dynabook",
+      "label": "Satellite",
+      "pattern": "Satellite",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "fujitsu-lifebook",
+      "brand": "fujitsu",
+      "label": "LIFEBOOK",
+      "pattern": "LIFEBOOK",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "fujitsu-celvin",
+      "brand": "fujitsu",
+      "label": "ESPRIMO / CELSIUS",
+      "pattern": "ESPRIMO|CELSIUS",
+      "form": "desktop",
+      "art": "workstation"
+    },
+    {
+      "id": "panasonic-toughbook",
+      "brand": "panasonic",
+      "label": "TOUGHBOOK",
+      "pattern": "TOUGHBOOK|\\bCF-",
+      "form": "laptop",
+      "art": "rugged-laptop"
+    },
+    {
+      "id": "vaio-sx",
+      "brand": "vaio",
+      "label": "VAIO SX / FE",
+      "pattern": "VAIO|\\bSX[0-9]|\\bFE[0-9]",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "medion-erazer",
+      "brand": "medion",
+      "label": "ERAZER",
+      "pattern": "ERAZER",
+      "form": "laptop",
+      "art": "gaming-laptop"
+    },
+    {
+      "id": "medion-akoya",
+      "brand": "medion",
+      "label": "AKOYA",
+      "pattern": "AKOYA",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "schenker-xmg",
+      "brand": "schenker",
+      "label": "XMG CORE / NEO / PRO",
+      "pattern": "XMG|NEO|CORE|PRO",
+      "form": "laptop",
+      "art": "gaming-laptop"
+    },
+    {
+      "id": "tuxedo-infinity",
+      "brand": "tuxedo",
+      "label": "InfinityBook",
+      "pattern": "InfinityBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "tuxedo-stellaris",
+      "brand": "tuxedo",
+      "label": "Stellaris",
+      "pattern": "Stellaris",
+      "form": "laptop",
+      "art": "gaming-laptop"
+    },
+    {
+      "id": "system76-laptop",
+      "brand": "system76",
+      "label": "Lemur / Oryx / Gazelle",
+      "pattern": "Lemur|Oryx|Gazelle|Pangolin|Darter|Bonobo",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "system76-thelio",
+      "brand": "system76",
+      "label": "Thelio",
+      "pattern": "Thelio",
+      "form": "desktop",
+      "art": "workstation"
+    },
+    {
+      "id": "corsair-one",
+      "brand": "corsair",
+      "label": "ONE / Vengeance",
+      "pattern": "ONE|Vengeance",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "corsair-voyager",
+      "brand": "corsair",
+      "label": "Voyager",
+      "pattern": "Voyager",
+      "form": "laptop",
+      "art": "gaming-laptop"
+    },
+    {
+      "id": "nzxt-player",
+      "brand": "nzxt",
+      "label": "Player",
+      "pattern": "Player",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "origin-eon",
+      "brand": "origin",
+      "label": "EON",
+      "pattern": "EON",
+      "form": "laptop",
+      "art": "gaming-laptop"
+    },
+    {
+      "id": "origin-desktop",
+      "brand": "origin",
+      "label": "NEURON / MILLENNIUM",
+      "pattern": "NEURON|MILLENNIUM|GENESIS",
+      "form": "desktop",
+      "art": "desktop"
+    },
+    {
+      "id": "zotac-zbox",
+      "brand": "zotac",
+      "label": "ZBOX",
+      "pattern": "ZBOX",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "intel-nuc",
+      "brand": "intel",
+      "label": "NUC",
+      "pattern": "NUC",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "beelink-mini",
+      "brand": "beelink",
+      "label": "SER / SEi / EQ / GT",
+      "pattern": "SER|SEi|EQ|GT",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "minisforum-mini",
+      "brand": "minisforum",
+      "label": "UM / HX / Venus / EliteMini",
+      "pattern": "UM|HX|Venus|EliteMini|MS-",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "asrock-deskmini",
+      "brand": "asrock",
+      "label": "DeskMini / DeskMeet",
+      "pattern": "DeskMini|DeskMeet",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "shuttle-xpc",
+      "brand": "shuttle",
+      "label": "XPC",
+      "pattern": "XPC",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "ecs-liva",
+      "brand": "ecs",
+      "label": "LIVA",
+      "pattern": "LIVA",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "chuwi-book",
+      "brand": "chuwi",
+      "label": "CoreBook / GemiBook / HeroBook",
+      "pattern": "CoreBook|GemiBook|HeroBook",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "chuwi-lark",
+      "brand": "chuwi",
+      "label": "LarkBox",
+      "pattern": "LarkBox",
+      "form": "mini",
+      "art": "mini-pc"
+    },
+    {
+      "id": "teclast-f",
+      "brand": "teclast",
+      "label": "F series",
+      "pattern": "F[0-9]",
+      "form": "laptop",
+      "art": "ultrabook"
+    },
+    {
+      "id": "packardbell-easynote",
+      "brand": "packardbell",
+      "label": "EasyNote",
+      "pattern": "EasyNote",
+      "form": "laptop",
+      "art": "ultrabook"
+    }
+  ],
+  "art": [
+    {
+      "id": "asus-tuf",
+      "label": "ASUS TUF",
+      "form": "laptop",
+      "src": "./devices/asus-tuf.png"
+    },
+    {
+      "id": "asus-rog",
+      "label": "ASUS ROG",
+      "form": "laptop",
+      "src": "./devices/asus-rog.png"
+    },
+    {
+      "id": "lenovo-legion",
+      "label": "Lenovo Legion",
+      "form": "laptop",
+      "src": "./devices/lenovo-legion.png"
+    },
+    {
+      "id": "lenovo-loq",
+      "label": "Lenovo LOQ",
+      "form": "laptop",
+      "src": "./devices/lenovo-loq.png"
+    },
+    {
+      "id": "lenovo-thinkpad",
+      "label": "Lenovo ThinkPad",
+      "form": "laptop",
+      "src": "./devices/lenovo-thinkpad.png"
+    },
+    {
+      "id": "hp-laptop",
+      "label": "HP Pavilion / Envy",
+      "form": "laptop",
+      "src": "./devices/hp-laptop.png"
+    },
+    {
+      "id": "alienware-laptop",
+      "label": "Alienware family",
+      "form": "laptop",
+      "src": "./devices/alienware-laptop.png"
+    },
+    {
+      "id": "acer-predator",
+      "label": "Acer gaming family",
+      "form": "laptop",
+      "src": "./devices/acer-predator.png"
+    },
+    {
+      "id": "msi-gaming",
+      "label": "MSI gaming family",
+      "form": "laptop",
+      "src": "./devices/msi-gaming.png"
+    },
+    {
+      "id": "hp-omen",
+      "label": "HP gaming family",
+      "form": "laptop",
+      "src": "./devices/hp-omen.png"
+    },
+    {
+      "id": "gaming-laptop",
+      "label": "Unbranded gaming laptop",
+      "form": "laptop",
+      "src": "./devices/gaming-laptop.png"
+    },
+    {
+      "id": "ultrabook",
+      "label": "Unbranded slim laptop",
+      "form": "laptop",
+      "src": "./devices/ultrabook.png"
+    },
+    {
+      "id": "rugged-laptop",
+      "label": "Rugged laptop",
+      "form": "laptop",
+      "src": "./devices/rugged-laptop.png"
+    },
+    {
+      "id": "tablet",
+      "label": "Detachable tablet / 2-in-1",
+      "form": "tablet",
+      "src": "./devices/tablet.png"
+    },
+    {
+      "id": "desktop",
+      "label": "Graphite tower",
+      "form": "desktop",
+      "src": "./devices/desktop.png"
+    },
+    {
+      "id": "desktop-white",
+      "label": "White tower",
+      "form": "desktop",
+      "src": "./devices/desktop-white.png"
+    },
+    {
+      "id": "workstation",
+      "label": "Workstation tower",
+      "form": "workstation",
+      "src": "./devices/workstation.png"
+    },
+    {
+      "id": "mini-pc",
+      "label": "Mini PC",
+      "form": "mini",
+      "src": "./devices/mini-pc.png"
+    },
+    {
+      "id": "all-in-one",
+      "label": "All-in-One",
+      "form": "aio",
+      "src": "./devices/all-in-one.png"
+    },
+    {
+      "id": "dell-xps",
+      "label": "Dell XPS family",
+      "form": "laptop",
+      "src": "./devices/dell-xps.png"
+    },
+    {
+      "id": "dell-business",
+      "label": "Dell business family",
+      "form": "laptop",
+      "src": "./devices/dell-business.png"
+    },
+    {
+      "id": "lenovo-yoga",
+      "label": "Lenovo Yoga family",
+      "form": "laptop",
+      "src": "./devices/lenovo-yoga.png"
+    },
+    {
+      "id": "asus-zenbook",
+      "label": "ASUS Zenbook family",
+      "form": "laptop",
+      "src": "./devices/asus-zenbook.png"
+    },
+    {
+      "id": "razer-blade",
+      "label": "Razer Blade family",
+      "form": "laptop",
+      "src": "./devices/razer-blade.png"
+    },
+    {
+      "id": "samsung-galaxybook",
+      "label": "Samsung Galaxy Book family",
+      "form": "laptop",
+      "src": "./devices/samsung-galaxybook.png"
+    }
+  ]
+}

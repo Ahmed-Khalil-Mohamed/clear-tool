@@ -1,6 +1,6 @@
 {
   "name": "clear-tool",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A bilingual Windows workspace for hardware, games, reviewed cache cleanup and updates.",
   "author": "Ahmed-Khalil-Mohamed",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "productName": "Clear Tool",
     "electronDist": "node_modules/electron/dist",
     "directories": {
-      "output": "release/2.2.0"
+      "output": "release/2.3.0"
     },
     "files": [
       "dist/**/*",

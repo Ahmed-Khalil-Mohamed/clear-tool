@@ -1,5 +1,7 @@
 # Release media
 
+Version 2.3 adds `device-atlas-en.png` (the Device Atlas illustration library) and `device-components-en.png` (local component inventory), captured directly from the packaged 2.3.0 Windows application in English. Hardware readings are from a test machine. The older general product screenshots below remain labeled as 2.2 captures.
+
 These images were captured from the native Clear Tool 2.2 Windows application:
 
 | File | What it shows |

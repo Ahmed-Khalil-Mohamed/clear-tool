@@ -1,15 +1,16 @@
 import React,{useState} from 'react';
 import {Cpu,GraphicsCard,Memory,Info,ArrowUpLeft} from '@phosphor-icons/react';
 import {deviceVisual,deviceFacts} from './device-visual.mjs';
+import DeviceLibrary from './DeviceLibrary';
 import {usePreferences} from './preferences';
 export default function DeviceHero({hw,navigate,execute}){
- const {settings}=usePreferences(),visual=deviceVisual(hw,settings.deviceArtwork),facts=deviceFacts(hw),[broken,setBroken]=useState(''),[exploded,setExploded]=useState(false);
+ const {settings}=usePreferences(),visual=deviceVisual(hw,settings.deviceArtwork),facts=deviceFacts(hw),[broken,setBroken]=useState(''),[exploded,setExploded]=useState(false),[library,setLibrary]=useState(false);
  const showOfficial=visual.official&&!exploded&&broken!==visual.official.src;
  const ram=facts.memory?Number((facts.memory/1024**3).toFixed(1))+' GB':'غير متاح';
- return <section className="device-portrait" data-device-visual={visual.id}>
+ return <><section className="device-portrait" data-device-visual={visual.id}>
  <div className="portrait-copy"><span className="portrait-kicker">جهازك.</span><h1 dir="auto">{visual.title}</h1><p>{visual.laptop?'أداء حقيقي، لمهامك اليومية.':'مساحة واحدة لكل قوة جهازك.'}</p><span className="portrait-model" dir="auto">{visual.model===visual.title?hw.manufacturer:visual.model}</span>
  <div className="portrait-facts"><button onClick={()=>navigate('performance')} title={facts.cpu}><Cpu size={28} weight="regular"/><small>CPU</small><b dir="auto">{facts.cpu}</b><span>{hw.cores||'—'} أنوية / {hw.threads||'—'} مسارات</span></button><button onClick={()=>navigate('drivers')} title={facts.gpuName}><GraphicsCard size={29} weight="regular"/><small>{facts.gpuVendor}</small><b dir="auto">{facts.gpuName.replace(/NVIDIA GeForce\s*/i,'')}</b><span>تعريف {facts.gpu?.DriverVersion||'غير متاح'}</span></button><button onClick={()=>navigate('performance')}><Memory size={29}/><small>RAM</small><b className="num">{ram}</b><span>{facts.physical?facts.memoryType:'ذاكرة متاحة للنظام'}</span></button></div>
- <div className="portrait-actions"><button onClick={()=>navigate('drivers')}>تفاصيل الجهاز والتعريفات <ArrowUpLeft size={17}/></button><span><i/> المعلومات من جهازك</span></div></div>
+ <button className="portrait-catalog-button" onClick={()=>setLibrary(true)}><Info size={17}/>{settings.language==='en'?'Device catalog & components':'كتالوج الأجهزة والقطع'}</button><div className="portrait-actions"><button onClick={()=>navigate('drivers')}>تفاصيل الجهاز والتعريفات <ArrowUpLeft size={17}/></button><span><i/> المعلومات من جهازك</span></div></div>
  <div className={'portrait-visual '+(showOfficial?'official-photo':'')}>{visual.official&&<div className="portrait-view-switch"><button className={!exploded?'selected':''} onClick={()=>setExploded(false)}>صورة الموديل</button><button className={exploded?'selected':''} onClick={()=>setExploded(true)}>عرض تفكيكي</button></div>}<div className="portrait-editorial" aria-hidden="true"><span>BUILT<br/>FOR<br/>WHAT’S<br/>NEXT.</span><span>{visual.laptop?'ENGINEERED\nTO PERFORM':'A CLOSER\nLOOK INSIDE'}</span></div><img src={showOfficial?visual.official.src:broken===visual.id?'./devices/'+(visual.laptop?'ultrabook':'desktop')+'.png':visual.src} alt={showOfficial?'ASUS TUF A16 FA607NUG — official product image':'عرض تفكيكي توضيحي — '+visual.family} onError={()=>setBroken(showOfficial?visual.official.src:visual.id)}/><div className="portrait-art-note"><Info size={13}/>{showOfficial?'صورة ASUS الرسمية لموديل جهازك':visual.caption}{showOfficial&&<button className="portrait-source-link" onClick={()=>execute('open',()=>window.clear.open(visual.official.source),'مصدر صورة الجهاز')}>المصدر</button>}</div></div>
- </section>
+ </section>{library&&<DeviceLibrary hw={hw} onClose={()=>setLibrary(false)}/>}</>
 }

@@ -9,7 +9,7 @@ body:
     id: version
     attributes:
       label: Clear Tool version
-      placeholder: "2.2.0 — installer or portable"
+      placeholder: "2.3.0 — installer or portable"
     validations:
       required: true
   - type: input

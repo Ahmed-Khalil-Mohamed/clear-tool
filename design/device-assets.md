@@ -41,3 +41,9 @@ ASUS ROG, Lenovo LOQ and ThinkPad are detected as distinct families. Mini PC for
 - Image source: https://dlcdnwebimgs.asus.com/gain/e1e466ef-a9fa-48ff-b740-71ad3966a695/w1000
 - An additional sourced FA607 series lid image is stored as `public/devices/asus-tuf-a16-fa607.png`; it is not used as a claimed exact model photo.
 - ASUS retains ownership of these vendor images. Other device families retain labeled illustrative fallbacks. No hardware identity is sent to a remote lookup service.
+
+## Device atlas expansion
+
+The current registry is `shared/device-catalog.json`; see `docs/DEVICE-ATLAS.md` for the full family-to-art mapping. Fourteen new illustrations were generated using the built-in ImageGen tool with transparent backgrounds. Prompts are recorded in `design/device-atlas-prompts.md`. They are representative family/form-factor artwork, not exact model photos or verified internal layouts. The UI explicitly labels this distinction. Existing illustrations and the verified FA607NUG photo are retained.
+
+UI additions follow existing Clear Tool variables and the design-system skill fallback DESIGN.md: neutral surfaces, one terracotta selection accent, quiet borders, responsive lists and keyboard-accessible controls.

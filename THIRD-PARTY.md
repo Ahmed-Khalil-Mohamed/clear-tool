@@ -15,3 +15,5 @@
 - png-to-ico — MIT, https://github.com/steambap/png-to-ico (asset generation only).
 
 Microsoft, NVIDIA, AMD, Intel and ASUS names belong to their owners. Clear Tool is an independent project, not an official utility from those companies. Vendor installers are obtained through official sources, not bundled with this app.
+
+The device atlas includes generated, representative family illustrations. These are not manufacturer-approved product photographs or service diagrams. All manufacturer and product-family names belong to their respective owners; inclusion does not imply endorsement or verified compatibility. The existing official ASUS photograph retains its separate terms above.

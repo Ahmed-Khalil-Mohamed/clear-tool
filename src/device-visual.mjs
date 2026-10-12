@@ -1,15 +1,13 @@
 import {cleanModel} from './device.mjs';
+import {art,identifyDevice} from './device-catalog.mjs';
 const list=x=>x==null?[]:Array.isArray(x)?x:[x];
-export const artworkChoices=[['asus-tuf','ASUS TUF'],['asus-rog','ASUS ROG Strix / Zephyrus'],['lenovo-legion','Lenovo Legion'],['lenovo-loq','Lenovo LOQ'],['lenovo-thinkpad','Lenovo ThinkPad'],['hp-laptop','HP Pavilion / Envy'],['gaming-laptop','Gaming laptop · MSI / Acer / Alienware'],['ultrabook','Ultrabook · Zenbook / VivoBook / Yoga / XPS'],['desktop','Desktop · Graphite'],['desktop-white','Desktop · White'],['mini-pc','Mini PC · NUC / Mini']].map(([id,label])=>({id,label}));
+export const artworkChoices=art;
 export function deviceVisual(hw={},override='auto'){
- const model=cleanModel(hw.model),maker=hw.manufacturer||'',text=maker+' '+model;
- const laptop=hw.pcType===1?false:hw.pcType===2||hw.pcType===8||list(hw.battery).length>0||/laptop|notebook|thinkpad|ideapad|yoga|legion|pavilion|envy|spectre|victus|omen|vivobook|zenbook|tuf gaming|rog|latitude|inspiron|xps|precision [357]\d{3}|aspire|nitro|swift|predator|surface/i.test(model);
- const gaming=/TUF|ROG|Legion|LOQ|Victus|OMEN|Nitro|Predator|Alienware|Katana|Raider|Stealth|Gaming|AORUS/i.test(model);
- let id='desktop',family='كمبيوتر مكتبي',matched=false;
- if(laptop){id='ultrabook';family='لابتوب';if(/ASUS|ASUSTeK/i.test(text)&&/TUF|FA50|FA60|FX50/i.test(model)){id='asus-tuf';family='ASUS TUF';matched=true;}else if(/ASUS|ASUSTeK/i.test(text)&&/ROG|Strix|Zephyrus/i.test(model)){id='asus-rog';family='ASUS ROG';matched=true;}else if(/Lenovo/i.test(maker)&&/Legion/i.test(model)){id='lenovo-legion';family='Lenovo Legion';matched=true;}else if(/Lenovo/i.test(maker)&&/LOQ/i.test(model)){id='lenovo-loq';family='Lenovo LOQ';matched=true;}else if(/Lenovo/i.test(maker)&&/ThinkPad/i.test(model)){id='lenovo-thinkpad';family='Lenovo ThinkPad';matched=true;}else if(gaming){id='gaming-laptop';family='لابتوب ألعاب';}else if(/^HP$|Hewlett/i.test(maker)&&/Pavilion|Envy/i.test(model)){id='hp-laptop';family='HP Pavilion / Envy';matched=true;}}else if(/NUC|Mini PC|MiniDesktop|ThinkCentre.*Tiny|OptiPlex.*Micro|Elite.*Mini|DeskMini|Mini.?ITX/i.test(model)){id='mini-pc';family='Mini PC';}
- const chosen=artworkChoices.find(x=>x.id===override);if(chosen){id=chosen.id;family=chosen.label;matched=false;}
- const official=!chosen&&/ASUS|ASUSTeK/i.test(maker)&&/FA607NUG(?:\b|_)/i.test(model)?{src:'./devices/asus-fa607nug-official.png',model:'FA607NUG',source:'asus-fa607nug'}:null;
- return {id,src:'./devices/'+id+'.png',family,matched,laptop,official,title:deviceTitle(model,maker),model,caption:chosen?'رسم توضيحي من اختيارك':matched?'تصوّر توضيحي لعائلة '+family:'تصوّر توضيحي لنوع الجهاز'};
+ const model=cleanModel(hw.model),maker=hw.manufacturer||'',detected=identifyDevice(hw);
+ const chosen=art.find(a=>a.id===override),id=chosen?.id||detected.artId;
+ const family=detected.family?detected.brand.label+' '+detected.family.label:detected.brand?.label||'Windows PC';
+ const official=!chosen&&detected.brand?.id==='asus'&&detected.form==='laptop'&&/FA607NUG(?:\b|_)/i.test(model)?{src:'./devices/asus-fa607nug-official.png',model:'FA607NUG',source:'asus-fa607nug'}:null;
+ return {id,src:art.find(a=>a.id===id).src,family,matched:!chosen&&!!detected.family,laptop:['laptop','tablet'].includes(detected.form),official,title:deviceTitle(model,maker),model,detected,manual:!!chosen,caption:chosen?'رسم توضيحي من اختيارك':detected.family?'تصوّر توضيحي؛ ليس تفكيكًا دقيقًا للموديل':'رسم عام حسب نوع الجهاز'};
 }
 export function deviceTitle(model,maker=''){
  const clean=cleanModel(model).replace(/_+/g,' ').replace(/\s+/g,' ').trim();

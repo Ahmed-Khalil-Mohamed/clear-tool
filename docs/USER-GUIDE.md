@@ -1,5 +1,12 @@
 # Using Clear Tool
 
+## Updating from 2.2
+
+Quit Clear Tool from its tray menu, then run the 2.3 installer for the same installation. For portable use, put the new executable beside the existing `ClearTool-Data` folder. Keep that folder; it contains your settings. A backup before upgrading is recommended. Clear Tool does not download or install its own updates automatically.
+
+Open **Overview → Device catalog & components** for the new atlas. Artwork selection changes the picture only, not detected hardware.
+
+
 [العربية](USER-GUIDE.ar.md) · [Home](../README.md)
 
 ## First launch
@@ -62,7 +69,7 @@ The local history tracks operations. A report export may contain installed appli
 Download `SHA256SUMS.txt` from the same release and compare the relevant line with:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\Clear-Tool-Setup-2.2.0.exe
+Get-FileHash -Algorithm SHA256 .\Clear-Tool-Setup-2.3.0.exe
 ```
 
 For the portable file, substitute its filename. A checksum detects a mismatch with the uploaded artifact; it is not a publisher signature.

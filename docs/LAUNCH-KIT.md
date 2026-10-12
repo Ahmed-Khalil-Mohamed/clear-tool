@@ -1,5 +1,7 @@
 # Clear Tool — launch kit
 
+For the current Device Atlas update, use the [2.3 launch kit](LAUNCH-KIT-2.3.md). The text below documents the original 2.2 launch.
+
 Public project: https://github.com/Ahmed-Khalil-Mohamed/clear-tool
 
 Download: https://github.com/Ahmed-Khalil-Mohamed/clear-tool/releases/latest

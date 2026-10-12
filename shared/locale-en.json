@@ -758,5 +758,8 @@
   "اربط Playnite قبل تثبيت الإضافات.": "Connect Playnite before installing add-ons.",
   "لم يكتمل فحص Windows Update. حاول مرة أخرى من إعدادات ويندوز.": "The Windows Update scan did not complete. Try again in Windows settings.",
   "التحقق من حزمة التحديث": "Verifying update package",
-  "لم يكتمل التحديث. كود الأداة:": "The update did not complete. Tool exit code:"
+  "لم يكتمل التحديث. كود الأداة:": "The update did not complete. Tool exit code:",
+  "تصوّر توضيحي؛ ليس تفكيكًا دقيقًا للموديل": "Illustration; not an exact model teardown",
+  "رسم عام حسب نوع الجهاز": "Generic illustration for this form factor",
+  "كتالوج الأجهزة والقطع": "Device catalog & components"
 }
