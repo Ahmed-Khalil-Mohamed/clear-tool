@@ -53,9 +53,9 @@ Suggested tags: `#ClearTool #OpenSource #Windows #Playnite`
 ## Media and suggested order
 
 1. [Launch graphic](images/launch-card.png) — introduction/social card.
-2. [Arabic overview](images/overview-ar.png) — device information and first impression.
-3. [Driver updates](images/driver-updates-ar.png) — review actual compatible update results.
-4. [Playnite add-ons](images/playnite-addons-ar.png) — explore console themes and extensions.
-5. [English dark settings](images/settings-dark-en.png) — personalization and bilingual support.
+2. [English overview](images/overview-en.png) — device information and first impression.
+3. [Driver updates](images/drivers-en.png) — review installed graphics drivers and available-update counts.
+4. [Playnite add-ons](images/playnite-addons-en.png) — explore console themes and extensions.
+5. [English dark tools](images/tools-dark-en.png) — personalization and bilingual support.
 
 These texts are ready for the project owner to share. Publishing this kit does not post to any social account or imply a paid campaign.

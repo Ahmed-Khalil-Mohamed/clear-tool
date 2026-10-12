@@ -8,7 +8,7 @@
 
 **[تنزيل أحدث إصدار](https://github.com/Ahmed-Khalil-Mohamed/clear-tool/releases/latest) · [English](../README.md) · [دليل الاستخدام](USER-GUIDE.ar.md) · [الإبلاغ عن مشكلة](https://github.com/Ahmed-Khalil-Mohamed/clear-tool/issues/new/choose)**
 
-![الواجهة الرئيسية بالعربية](images/overview-ar.png)
+![الواجهة الرئيسية بالإنجليزية](images/overview-en.png)
 
 Clear Tool مشروع مستقل ومفتوح المصدر يجمع أدوات متابعة الجهاز والصيانة اليومية في واجهة منظمة. اعرف الموجود على جهازك، راجع التحديثات المتاحة، نظّم ألعابك، وافحص الكاش قبل ما تقرر تنظّفه.
 
@@ -46,11 +46,11 @@ Clear Tool مشروع مستقل ومفتوح المصدر يجمع أدوات �
 - كتالوج إضافات Playnite قابل للبحث، وزر يسلم التثبيت إلى Playnite.
 - صورة رسمية لموديل ASUS FA607NUG عند اكتشافه، مع عرض تفكيكي توضيحي اختياري.
 
-![التعريفات وتحديثاتها](images/driver-updates-ar.png)
+![التعريفات وتحديثاتها](images/drivers-en.png)
 
-![إضافات Playnite](images/playnite-addons-ar.png)
+![إضافات Playnite](images/playnite-addons-en.png)
 
-![الثيم الداكن واللغة الإنجليزية](images/settings-dark-en.png)
+![أدوات ويندوز بالإنجليزية والثيم الداكن](images/tools-dark-en.png)
 
 الصور من التطبيق الفعلي؛ الأرقام والمواصفات والتحديثات مثال من جلسة اختبار وستختلف على جهازك. رسومات عائلات الأجهزة توضيحية، وليست صورًا دقيقة لكل موديل.
 

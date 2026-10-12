@@ -15,7 +15,7 @@ Hardware. Games. Storage. Updates. One organized workspace.
 
 **[Download](https://github.com/Ahmed-Khalil-Mohamed/clear-tool/releases/latest) · [العربية](docs/README.ar.md) · [User guide](docs/USER-GUIDE.md) · [Report an issue](https://github.com/Ahmed-Khalil-Mohamed/clear-tool/issues/new/choose)**
 
-<img src="docs/images/overview-ar.png" alt="Clear Tool 2.2 Arabic overview showing a detected ASUS laptop and its hardware" width="1100" />
+<img src="docs/images/overview-en.png" alt="Clear Tool 2.2 English overview showing a detected ASUS laptop and its hardware" width="1100" />
 
 </div>
 
@@ -66,19 +66,19 @@ Clear Tool does not promise an FPS increase, recover a fixed amount of space, re
 
 Installed inventory and available updates have separate views. Update availability comes from Windows Update, not an assumption based on a driver's age. Installation continues in Windows Update.
 
-![Driver updates workspace](docs/images/driver-updates-ar.png)
+![Driver updates workspace](docs/images/drivers-en.png)
 
 ### Playnite add-ons, easier to explore
 
 Browse by category, search themes and extensions, then hand the selected add-on to Playnite for installation. Playnite must be installed and its protocol registered. Catalog availability changes over time.
 
-![Playnite fullscreen theme search](docs/images/playnite-addons-ar.png)
+![Playnite fullscreen theme search](docs/images/playnite-addons-en.png)
 
 ### Your language. Your theme.
 
 Arabic with right-to-left layout or English with left-to-right layout. Preferences persist between sessions and apply to the widget.
 
-![English dark appearance settings](docs/images/settings-dark-en.png)
+![English dark tools workspace](docs/images/tools-dark-en.png)
 
 These are screenshots of the native 2.2 application. Hardware, usage figures and available updates shown belong to a test session and will differ on your PC. See [image provenance](docs/images/README.md).
 
