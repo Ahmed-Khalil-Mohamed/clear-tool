@@ -1,0 +1,33 @@
+name: Bug report / مشكلة
+description: Report a reproducible Clear Tool issue.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Remove private paths, account details, network addresses and credentials before posting. احذف أي بيانات شخصية قبل النشر."
+  - type: input
+    id: version
+    attributes:
+      label: Clear Tool version
+      placeholder: "2.2.0 — installer or portable"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and architecture
+      placeholder: "Windows 11, x64"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, what did you expect, and what happened?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or relevant error
+      description: Share only the relevant message, with personal details removed.

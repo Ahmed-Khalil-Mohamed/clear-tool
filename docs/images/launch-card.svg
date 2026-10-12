@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f2f1eb"/>
+<rect x="1030" width="570" height="900" fill="#1c252a"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="88" y="110" fill="#202a2f" font-size="42" font-weight="750">ClearTool<tspan fill="#bd4930">.</tspan></text>
+<text x="88" y="180" fill="#68766d" font-size="19" letter-spacing="3">WINDOWS WORKSPACE / 2.2</text>
+<text x="80" y="330" fill="#202a2f" font-size="128" font-weight="750" letter-spacing="-7">Your PC.</text>
+<text x="80" y="470" fill="#202a2f" font-size="128" font-weight="750" letter-spacing="-7">Clearly.</text>
+<rect x="88" y="523" width="70" height="5" fill="#bd4930"/>
+<text x="88" y="596" fill="#55636b" font-size="28">Hardware. Games. Storage. Updates.</text>
+<text x="88" y="640" fill="#55636b" font-size="28">One organized, open-source workspace.</text>
+<rect x="88" y="706" width="255" height="64" rx="8" fill="#bd4930"/>
+<text x="215" y="747" text-anchor="middle" fill="#fff" font-size="22" font-weight="600">Available on GitHub</text>
+<text x="88" y="838" fill="#68766d" font-size="18">FREE · WINDOWS x64 · ARABIC / ENGLISH</text>
+<text x="1090" y="113" fill="#a7b4b9" font-size="17" letter-spacing="3">BUILT AROUND YOUR PC</text>
+<g fill="none" stroke="#415057"><path d="M1090 170H1540M1090 323H1540M1090 476H1540M1090 629H1540M1090 782H1540"/></g>
+<g fill="#dd896c" font-size="16"><text x="1090" y="220">01 / UNDERSTAND</text><text x="1090" y="373">02 / REVIEW</text><text x="1090" y="526">03 / PLAY</text><text x="1090" y="679">04 / PERSONALIZE</text></g>
+<g fill="#f3f2ec" font-size="32" font-weight="600"><text x="1090" y="271">Know your hardware.</text><text x="1090" y="424">See available updates.</text><text x="1090" y="577">Bring games together.</text><text x="1090" y="730">Make it yours.</text></g>
+<text x="1090" y="838" fill="#a7b4b9" font-size="15">github.com/Ahmed-Khalil-Mohamed/clear-tool</text>
+</g></svg>

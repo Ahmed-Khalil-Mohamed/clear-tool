@@ -1,0 +1,3 @@
+const enums={language:['ar','en'],theme:['light','dark'],consoleStyle:['station','box','classic'],deviceArtwork:['auto','asus-tuf','asus-rog','lenovo-legion','lenovo-loq','lenovo-thinkpad','hp-laptop','gaming-laptop','ultrabook','desktop','desktop-white','mini-pc']};
+function validatePreferences(patch){if(!patch||typeof patch!=='object'||Array.isArray(patch))throw Error('Invalid settings');for(const [key,value]of Object.entries(patch)){if(['background','startup','widgetTop','sidebarCompact'].includes(key)){if(typeof value!=='boolean')throw Error('Invalid setting: '+key);}else if(!enums[key]?.includes(value))throw Error('Invalid setting: '+key);}return patch;}
+module.exports={enums,validatePreferences};

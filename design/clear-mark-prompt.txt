@@ -1,0 +1,4 @@
+Mode: Built-in image_gen.
+Output: public/clear-mark.png
+
+Use case: logo-brand. Asset type: square 1024 by 1024 raster app icon for Clear Tool Windows utility. Create a single centered very bold geometric uppercase C monogram, dark charcoal #20272b, with one small vermilion #e4522e terminal detail. Flat warm white #f7f7f5 canvas. The geometric C should occupy 75 percent of the canvas and be recognizable at tiny icon size: substantial strokes, clear open counter and opening on right, carefully balanced optical proportions. A restrained functional industrial Windows utility brand with architectural geometry, flat fills, crisp clean edges. Only the C monogram, no other letters, no words, no numerals, no other symbols. No frame, no shadow, no gradient, no glow, no 3D, no mockup scene, no rounded app tile, no texture. One finished square icon.

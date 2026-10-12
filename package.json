@@ -1,0 +1,84 @@
+{
+  "name": "clear-tool",
+  "version": "2.2.0",
+  "description": "A bilingual Windows workspace for hardware, games, reviewed cache cleanup and updates.",
+  "author": "Ahmed-Khalil-Mohamed",
+  "license": "MIT",
+  "private": true,
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "start": "electron .",
+    "test": "node --test tests/*.test.cjs",
+    "package": "npm run build && electron-builder --win portable nsis"
+  },
+  "build": {
+    "appId": "com.cleartool.desktop",
+    "productName": "Clear Tool",
+    "electronDist": "node_modules/electron/dist",
+    "directories": {
+      "output": "release/2.2.0"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "assets/**/*",
+      "package.json",
+      "README.md",
+      "LICENSE",
+      "THIRD-PARTY.md",
+      "shared/**/*"
+    ],
+    "asar": true,
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "signAndEditExecutable": true
+    },
+    "portable": {
+      "artifactName": "Clear-Tool-Portable-${version}.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "artifactName": "Clear-Tool-Setup-${version}.exe",
+      "installerSidebar": "assets/installer-sidebar.bmp",
+      "uninstallerSidebar": "assets/installer-sidebar.bmp"
+    },
+    "npmRebuild": false,
+    "asarUnpack": [
+      "node_modules/node-pty/**/*"
+    ]
+  },
+  "devDependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/noto-sans-arabic": "^5.3.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "@playwright/test": "^1.64.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^44.7.0",
+    "electron-builder": "^26.15.3",
+    "png-to-ico": "^3.0.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "node-pty": "^1.1.0"
+  },
+  "homepage": "https://github.com/Ahmed-Khalil-Mohamed/clear-tool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ahmed-Khalil-Mohamed/clear-tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ahmed-Khalil-Mohamed/clear-tool/issues"
+  }
+}
