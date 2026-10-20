@@ -2,11 +2,14 @@ const {spawn}=require('node:child_process');
 const cleanTerminal=text=>text.replace(/\x1b\][^\x07]*(?:\x07|\x1b\\)/g,'').replace(/\x1b\[[0-?]*[ -/]*[@-~]/g,'');
 function parseProgress(text){
  const clean=cleanTerminal(text);
+ if(/Successfully installed|Successfully upgraded/i.test(clean))return {phase:'التحقق من الإصدار المثبّت',measurable:false};
+ if(/Starting package install|^\s*Installing\b/i.test(clean))return {phase:'تثبيت التحديث',measurable:false};
+ const numeric=v=>Number(v.includes(',')&&!v.includes('.')&&!/^\d{1,3}(,\d{3})+$/.test(v)?v.replace(',','.'):v.replace(/,/g,''));
  const bytes=[...clean.matchAll(/([\d.,]+)\s*(KB|MB|GB|TB)\s*\/\s*([\d.,]+)\s*(KB|MB|GB|TB)/gi)].at(-1);
- if(bytes){const scale={KB:1024,MB:1024**2,GB:1024**3,TB:1024**4},current=Number(bytes[1].replace(/,/g,''))*scale[bytes[2].toUpperCase()],total=Number(bytes[3].replace(/,/g,''))*scale[bytes[4].toUpperCase()];if(total>0&&current>=0&&current<=total*1.01)return {phase:'تنزيل حزمة التحديث',current:Math.min(current,total),total,measurable:true,unit:'bytes'};}
+ if(bytes){const scale={KB:1024,MB:1024**2,GB:1024**3,TB:1024**4},current=numeric(bytes[1])*scale[bytes[2].toUpperCase()],total=numeric(bytes[3])*scale[bytes[4].toUpperCase()];if(total>0&&current>=0&&current<=total*1.01)return {phase:'تنزيل حزمة التحديث',current:Math.min(current,total),total,measurable:true,unit:'bytes'};}
  const match=[...clean.matchAll(/(?:^|[\s\r\n])([0-9]{1,3}(?:\.[0-9]+)?)%/g)].at(-1);
  if(match&&Number(match[1])<=100)return {phase:'تقدم أداة التحديث',current:Number(match[1]),total:100,measurable:true,unit:'percent'};
- if(/Successfully installed|Successfully upgraded/i.test(clean))return {phase:'اكتمل التثبيت',current:100,total:100,measurable:true,unit:'percent'};
+
  if(/Starting package install|^\s*Installing\b/i.test(clean))return {phase:'تثبيت التحديث',measurable:false};
  if(/verified installer hash|Verifying/i.test(clean))return {phase:'التحقق من حزمة التحديث',measurable:false};
  if(/Downloading/i.test(clean))return {phase:'تنزيل حزمة التحديث',measurable:false};

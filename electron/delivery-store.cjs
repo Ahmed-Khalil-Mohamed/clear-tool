@@ -1,0 +1,8 @@
+const fs=require('node:fs/promises'),path=require('node:path');
+const states=new Set(['review','running','verifying','verified','unverified','failed','cancelled','interrupted']);
+function sanitize(rows){return (Array.isArray(rows)?rows:[]).filter(j=>j&&typeof j.id==='string'&&j.id.length<100&&typeof j.packageId==='string'&&/^[\w][\w.+-]{1,180}$/.test(j.packageId)&&typeof j.expected==='string'&&j.expected.length<100&&typeof j.name==='string'&&j.name.length<200&&states.has(j.state)&&Number.isFinite(Date.parse(j.startedAt))).slice(0,30).map(j=>({id:j.id,packageId:j.packageId,name:j.name,expected:j.expected,mode:j.mode==='upgrade'?'upgrade':'install',state:['review','running','verifying'].includes(j.state)?'interrupted':j.state,startedAt:j.startedAt,finishedAt:j.finishedAt,actual:typeof j.actual==='string'?j.actual.slice(0,100):null,output:typeof j.output==='string'?j.output.slice(-65536):'',verifiedAt:j.verifiedAt,originalState:j.originalState}));}
+function createStore(file){let queue=Promise.resolve();return {
+ async load(){if(!file)return [];try{const st=await fs.stat(file);if(st.size>3*1024*1024)return [];return sanitize(JSON.parse(await fs.readFile(file,'utf8')))}catch{return []}},
+ save(rows){if(!file)return Promise.resolve();const snapshot=JSON.stringify(rows.slice(0,30).map(j=>({...j,progress:undefined,output:j.output?.slice(-65536)})),null,2);queue=queue.catch(()=>{}).then(async()=>{await fs.mkdir(path.dirname(file),{recursive:true});const temp=file+'.tmp';await fs.writeFile(temp,snapshot);await fs.rename(temp,file)});return queue;}
+};}
+module.exports={sanitize,createStore};

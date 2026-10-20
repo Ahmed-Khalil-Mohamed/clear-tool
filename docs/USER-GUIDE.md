@@ -1,8 +1,8 @@
 # Using Clear Tool
 
-## Updating from 2.2
+## Updating to 2.4.2
 
-Quit Clear Tool from its tray menu, then run the 2.3 installer for the same installation. For portable use, put the new executable beside the existing `ClearTool-Data` folder. Keep that folder; it contains your settings. A backup before upgrading is recommended. Clear Tool does not download or install its own updates automatically.
+Quit Clear Tool from its tray menu, then run the 2.4.2 installer for the same installation. For portable use, put the new executable beside the existing `ClearTool-Data` folder. Keep that folder; it contains your settings. A backup before upgrading is recommended. Clear Tool does not download or install its own updates automatically.
 
 Open **Overview → Device catalog & components** for the new atlas. Artwork selection changes the picture only, not detected hardware.
 
@@ -14,6 +14,14 @@ Open **Overview → Device catalog & components** for the new atlas. Artwork sel
 Download the installer or portable executable from [Releases](https://github.com/Ahmed-Khalil-Mohamed/clear-tool/releases/latest). The startup screen reads hardware, installed programs and gaming runtimes. Allow it to finish; use Retry if Windows returns an error. Offline inventory works, while online catalogs and update checks need connectivity.
 
 In **App settings**, choose Arabic/English and light/dark. Settings save automatically. Closing the window may keep the app in the system tray when background mode is enabled; use the tray menu to quit completely. Start with Windows and the shortcuts widget are optional settings. The widget is a normal utility window, not an Explorer desktop replacement.
+
+## Guided tools, health and downloads
+
+Open **Tools & add-ons** and choose a task. Search, categories and favorites narrow the library; advanced diagnostics are grouped separately. Native tools open a guide before running. Read the purpose and expected output, run the primary action, then review the result. Original evidence is under **Show technical details**; use **Save result as a file** for JSON export. The latest utility result remains available during the session. [Tool details](CONTROL-CENTER.md).
+
+Open **Device health** for eight read-only checks. Review findings and evidence before selecting a repair action. The latest report survives restart. [Health guide](HEALTH-CENTER.md).
+
+Open **Apps & drivers → Downloads & verification** to review one of six Windows-tool packages before installing/upgrading it. Check the final installed-version verification, not just download completion. The latest 30 operations are retained, with version rechecks and export. [Downloads guide](DOWNLOADS.md).
 
 ## Review and clean cache
 
@@ -69,7 +77,7 @@ The local history tracks operations. A report export may contain installed appli
 Download `SHA256SUMS.txt` from the same release and compare the relevant line with:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\Clear-Tool-Setup-2.3.0.exe
+Get-FileHash -Algorithm SHA256 .\Clear-Tool-Setup-2.4.2.exe
 ```
 
 For the portable file, substitute its filename. A checksum detects a mismatch with the uploaded artifact; it is not a publisher signature.

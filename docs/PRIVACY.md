@@ -1,12 +1,12 @@
 # Privacy and local data
 
-Clear Tool 2.2 has no account service, advertising SDK, analytics collector or automatic crash-report uploader.
+Clear Tool 2.4.2 has no account service, advertising SDK, analytics collector or automatic crash-report uploader.
 
 ## What stays on the PC
 
 The app reads hardware, software registrations, drivers, selected folders, supported game libraries and network status to show its workspaces. Preferences, local shortcuts, cached update results and operation history remain in the Electron user-data directory. The portable build uses `ClearTool-Data` beside the executable. Development mode uses the ignored `work/app-data` folder.
 
-Reports are saved only when requested through the export dialog. They may contain application inventories, device details and paths. Review or redact them before sharing. Screenshots of network panels may expose network names or addresses.
+The latest health report, a validated inventory snapshot and the latest 30 download operations are retained locally. Battery reports are generated locally when requested. Export creates a separate report at the location selected in the save dialog; no report is uploaded automatically. Reports may contain application inventories, device details, paths or event information. Review or redact them before sharing. Screenshots of network panels may expose network names or addresses.
 
 ## Online requests
 

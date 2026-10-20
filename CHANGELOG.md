@@ -1,5 +1,42 @@
 # Changelog
 
+## 2.4.2 — Guided tools, device health and reliable downloads — 2026-10-20
+
+- Task-focused tool home with a PC-check starting point, three quick tasks, compact tool rows, search, categories and favorites.
+- Six native tools now open a dedicated guide before running: purpose, expected output, three simple steps and one primary action.
+- Plain-language battery, drive and service summaries; file comparison has explicit match, mismatch and invalid-input states. Original evidence stays available in collapsed details.
+- Progress, elapsed time, last result, export and error details remain available without crowding the interface. Advanced diagnostics are grouped separately.
+- Arabic/English and light/dark layouts verified at 760, 1024 and 1440 pixels; keyboard focus returns to the selected tool. This public release includes the previously local 2.4.0 and 2.4.1 improvements below.
+
+## 2.4.1 — Performance and tool reliability (included in 2.4.2)
+
+- Faster reopening through a validated inventory snapshot with visible background refresh, timestamp and failure recovery; game discovery no longer blocks startup.
+- Network monitoring and hidden-window sampling pause when unused; driver-update scans and specialist workspaces load on demand.
+- Refined sidebar, readable tool cards, structured results, compact activity tracking and keyboard focus states in Arabic/English and light/dark.
+- Utility results survive navigation; exports capture the displayed result even when another tool completes. Health reports update across navigation.
+- Throttled file-scan progress, checks for changing duplicate candidates, and unknown status for incomplete diagnostics.
+- 65 automated tests, six native utilities and a 17-workspace smoke test. See [performance and verification notes](docs/PERFORMANCE.md) for measured startup times and testing scope.
+
+## 2.4.0 — Device health (included in 2.4.2)
+
+- Retain the last 30 download operations and latest health report across restarts; interrupted work requires review rather than automatic retry.
+- Read-only version rechecks, per-operation exports, history filters, installed-version previews and redundant-install prevention. 54 automated tests pass.
+
+- Downloads & verification workspace: six exact-ID tool packages, live metadata review, pinned versions, shared install/upgrade lock and installed-version verification.
+- Installation success, unverified completion, failure and cancellation are separate results; update scans and previews expire.
+- Fixed decimal-comma progress, restarted transfer estimates, numeric firewall status, invalid memory readings and cached Windows Update labeling.
+- Refined update, driver and integration layouts; website actions no longer imply completed downloads. See [downloads guide](docs/DOWNLOADS.md).
+
+- Rebuilt the home control center and application shell, with live metrics, device artwork, health access, recommended actions and storage map.
+- Added a searchable toolkit with categories, favorites and six new local utilities: SHA-256 comparison, battery report, sleep diagnostics, physical drive status, service review and battery snapshot.
+- Tool results support JSON export; native tool and responsive interface checks passed. See [control center guide](docs/CONTROL-CENTER.md).
+
+- Dedicated sidebar workspace for eight staged, read-only Windows health checks, evidence, attention filters and JSON export.
+- Integrated confirmed SFC, DISM and DNS maintenance commands with result inspection and rescanning.
+- Responsive English/Arabic, light/dark interface with actual completed-check progress and elapsed time.
+- Failed or inaccessible probes remain unavailable. Firewall numeric enum values are handled correctly.
+- Native restart tests verified report retention, interrupted-download recovery, version rechecks, exports and history filtering. See [health center guide](docs/HEALTH-CENTER.md) for scope and validation.
+
 ## 2.3.0 — Device Atlas
 
 ### Added

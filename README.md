@@ -15,7 +15,7 @@ Hardware. Games. Storage. Updates. One organized workspace.
 
 **[Download](https://github.com/Ahmed-Khalil-Mohamed/clear-tool/releases/latest) · [العربية](docs/README.ar.md) · [User guide](docs/USER-GUIDE.md) · [Report an issue](https://github.com/Ahmed-Khalil-Mohamed/clear-tool/issues/new/choose)**
 
-<img src="docs/images/overview-en.png" alt="Clear Tool 2.2 English overview showing a detected ASUS laptop and its hardware" width="1100" />
+<img src="docs/images/home-242-en.png" alt="Clear Tool 2.4.2 English home workspace with detected hardware and device-health access" width="1100" />
 
 </div>
 
@@ -31,8 +31,8 @@ Get the Windows x64 files from **[GitHub Releases](https://github.com/Ahmed-Khal
 
 | File | Choose it when… |
 | --- | --- |
-| **Clear-Tool-Setup-2.3.0.exe** | You want the guided installer and shortcuts. Recommended for regular use. |
-| **Clear-Tool-Portable-2.3.0.exe** | You prefer to run without installing. Keep it in a writable folder; settings are stored beside it in `ClearTool-Data`. |
+| **Clear-Tool-Setup-2.4.2.exe** | You want the guided installer and shortcuts. Recommended for regular use. |
+| **Clear-Tool-Portable-2.4.2.exe** | You prefer to run without installing. Keep it in a writable folder; settings are stored beside it in `ClearTool-Data`. |
 | **SHA256SUMS.txt** | You want to verify the downloaded files. See the [guide](docs/USER-GUIDE.md#verify-a-download). |
 | Source code (zip / tar.gz) | You want to inspect or build the code. This is not the Windows installer. |
 
@@ -62,7 +62,26 @@ Additional workspaces cover network adapters, native Windows VPN profiles, secur
 
 Clear Tool does not promise an FPS increase, recover a fixed amount of space, replace a VPN service or bundle games and BIOS files.
 
-## New in 2.3 — Device Atlas
+## New in 2.4.2 — Guided tools and a healthier PC
+
+This release brings together every change since 2.3, including the previously local 2.4.0 and 2.4.1 builds.
+
+- **Tools you can understand before running:** task-based entry points, search, favorites and a dedicated guide with one primary action. Advanced diagnostics stay grouped separately.
+- **Six local utilities:** file checksum comparison, battery reports, battery charge, drive status, sleep diagnostics and stopped-service review. Plain-language results come first; original evidence and JSON export remain available.
+- **Device health:** eight staged, read-only checks with evidence, unavailable states, report retention and reviewed access to Windows repair commands.
+- **Downloads & verification:** review six Windows-tool packages, track install/upgrade progress, distinguish verified success from an unverified completion, recheck versions and keep the latest 30 operations.
+- **Less repeated work:** validated saved inventory opens the workspace before live refresh; game discovery and update scans run on demand. Hidden-window sampling and unused network monitoring pause.
+- **More reliable results:** changed duplicate candidates are skipped, incomplete checks stay unknown, and utility exports capture the displayed result.
+
+![Guided tools in English](docs/images/tools-242-en.png)
+
+Each native tool explains when to use it, what it returns and how to read the result.
+
+![Drive-status guide in English](docs/images/tool-guide-242-en.png)
+
+Read the [tool guide](docs/CONTROL-CENTER.md), [health checks](docs/HEALTH-CENTER.md), [downloads guide](docs/DOWNLOADS.md) and [performance measurements](docs/PERFORMANCE.md).
+
+## Previously in 2.3 — Device Atlas
 
 Explore **42 brands, 110 device families and 25 illustrations** from **Overview → Device catalog & components**. Filter by brand or form factor, select representative artwork, and inspect the components Windows reports. This is a family directory, not an exact photo of every model. [View coverage and limits](docs/DEVICE-ATLAS.md).
 
@@ -86,9 +105,9 @@ Browse by category, search themes and extensions, then hand the selected add-on 
 
 Arabic with right-to-left layout or English with left-to-right layout. Preferences persist between sessions and apply to the widget.
 
-![English dark tools workspace](docs/images/tools-dark-en.png)
+![English dark guided tools workspace](docs/images/tools-242-dark-en.png)
 
-The Device Atlas screenshots show version 2.3; the general workspace screenshots show version 2.2. Hardware, usage figures and available updates belong to a test session and will differ on your PC. See [image provenance](docs/images/README.md).
+The home and guided-tool screenshots show version 2.4.2. The Device Atlas screenshots show 2.3; driver and Playnite screenshots show 2.2. Hardware, usage figures and available updates belong to a test session and will differ on your PC. See [image provenance](docs/images/README.md).
 
 ## Previously in 2.2
 
@@ -99,7 +118,7 @@ The Device Atlas screenshots show version 2.3; the general workspace screenshots
 - An official ASUS FA607NUG exterior photo for that exact detected model, alongside the labeled illustrative view.
 - Arabic/English and light/dark workspaces, improved sidebar, emulation links and Windows tools.
 
-Read the [release notes](docs/releases/v2.3.0.md) and [changelog](CHANGELOG.md).
+Read the [release notes](docs/releases/v2.4.2.md) and [changelog](CHANGELOG.md).
 
 ## Privacy & deliberate actions
 
@@ -126,7 +145,7 @@ Create the portable app and installer:
 npm run package
 ```
 
-Outputs are placed in `release/2.3.0/`. For live frontend development, run `npm run dev` in one terminal, then `$env:CLEAR_DEV_URL='1'; npm start` in another. Browser-only previews cannot inspect Windows hardware.
+Outputs are placed in `release/2.4.2/`. For live frontend development, run `npm run dev` in one terminal, then `$env:CLEAR_DEV_URL='1'; npm start` in another. Browser-only previews cannot inspect Windows hardware.
 
 Built with React, Vite, Electron, PowerShell/CIM and node-pty. The renderer uses context isolation and sandboxing with a named IPC API. See [contributing](CONTRIBUTING.md) for the project layout and verification workflow.
 

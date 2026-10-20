@@ -1,1 +1,11 @@
-{}
+{
+  "صحة الجهاز": "Device health",
+  "التنزيلات والتحقق": "Downloads & verification",
+  "الوقت المتبقي غير متاح": "Remaining time unavailable",
+  "تم التحقق من الإصدار المثبّت.": "Installed version verified.",
+  "انتهى الأمر لكن الإصدار يحتاج تحققًا.": "Command finished; version needs verification.",
+  "التحقق من الإصدار المثبّت": "Verifying installed version",
+  "نتيجة محفوظة خلال آخر 15 دقيقة؛ اضغط فحص الآن لتحديثها.": "Cached result from the last 15 minutes; scan again to refresh.",
+  "الموقع الرسمي": "Official website",
+  "أثناء عرض المراقبة:": "While monitoring is visible:"
+}

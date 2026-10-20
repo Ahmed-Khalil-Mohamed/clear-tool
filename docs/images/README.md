@@ -1,5 +1,7 @@
 # Release media
 
+Version 2.4.2 adds `home-242-en.png`, `tools-242-en.png`, `tool-guide-242-en.png`, `health-242-en.png`, `downloads-242-en.png` and `tools-242-dark-en.png`. These are direct English captures of the packaged 2.4.2 Windows application. They show the new home, guided utilities, read-only health workspace and download catalog. No installation success is implied by a catalog screenshot.
+
 Version 2.3 adds `device-atlas-en.png` (the Device Atlas illustration library) and `device-components-en.png` (local component inventory), captured directly from the packaged 2.3.0 Windows application in English. Hardware readings are from a test machine. The older general product screenshots below remain labeled as 2.2 captures.
 
 These images were captured from the native Clear Tool 2.2 Windows application:
